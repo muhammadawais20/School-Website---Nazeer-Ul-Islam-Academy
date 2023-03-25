@@ -1,0 +1,160 @@
+.AdmissionContainer {
+    margin-left: auto;
+    margin-right: auto;
+
+    .AdmissionWrapper {
+        display: flex;
+        align-items: center;
+        line-height: 2;
+        max-width: 1500px;
+        padding: 50px;
+        gap: 30px;
+        margin: auto;
+        background-color: #f8f7fe;
+
+        .AdmissionLeft {
+            flex: 1;
+            margin-bottom: auto;
+            margin-top: 15px;
+
+            >.AdmissionImage {
+                max-width: 100%;
+                width: 700px;
+                height: auto;
+                margin: auto;
+                top: 0;
+            }
+        }
+
+        .AdmissionRight {
+            flex: 1;
+
+            .AdmissionForm {
+
+                .AdmissionField,
+                .AdmissionTextArea {
+
+                    box-sizing: border-box;
+                    width: 90%;
+                    margin: 15px 0;
+                    min-height: 60px;
+                    border: none;
+                    background: #fff;
+                    font-size: 17px;
+                    color: #676767;
+                    padding: 0px 25px;
+
+                    &:focus {
+                        outline: none;
+                        border: 2px solid #1b75bb;
+                    }
+
+                    &:hover {
+                        border: 2px solid #00a14b;
+                    }
+                }
+
+                .AdmissionFieldSelect {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 90%;
+                    gap: 20px;
+
+                    #studentAge {
+                        width: 50%;
+                    }
+
+                    #admissionSession {
+                        width: 100%;
+                    }
+
+                    .AdmissionFieldOption {
+                        box-sizing: border-box;
+                        width: 50%;
+                        margin: 15px 0;
+                        min-height: 60px;
+                        border: none;
+                        background: #fff;
+                        font-size: 17px;
+                        color: #676767;
+                        padding: 0px 25px;
+
+                        &:focus {
+                            outline: none;
+                            border: 2px solid #1b75bb;
+                        }
+
+                        &:hover {
+                            border: 2px solid #00a14b;
+                        }
+                    }
+                }
+
+                .AdmissionTextArea {
+                    padding-top: 20px;
+                    font-family: inherit;
+                }
+
+                .AdmissionButton {
+                    font-size: 1.25rem;
+                    padding: 8px 28px;
+                    margin: 15px 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    outline: none;
+                    border: none;
+                    cursor: pointer;
+                    display: block !important;
+                    background-color: #1b75bb;
+
+                    &:hover {
+                        padding: 8px 28px;
+                        transition: all 0.3s ease-out;
+                        background-color: #00a14b;
+                        color: #fff;
+                        transition: 258ms;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .AdmissionWrapper>.AdmissionImage {
+        height: 300px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .AdmissionFieldSelect {
+        flex-direction: column;
+        gap: 0px !important;
+
+        #studentAge {
+            width: 100% !important;
+        }
+
+        .AdmissionFieldOption {
+            width: 100% !important;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .AdmissionWrapper {
+        flex-direction: column;
+        gap: 15px !important;
+    }
+
+    .AdmissionRight {
+        text-align: center;
+
+        .AdmissionField,
+        .AdmissionTextArea,
+        .AdmissionFieldSelect {
+            width: 100% !important;
+        }
+    }
+}

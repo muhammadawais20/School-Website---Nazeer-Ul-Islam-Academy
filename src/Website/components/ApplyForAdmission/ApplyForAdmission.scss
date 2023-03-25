@@ -1,0 +1,71 @@
+.admissionSection {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+
+    .admissionWrapper {
+        display: flex;
+        gap: 30px;
+        line-height: 2;
+        max-width: 1035px;
+        padding: 25px;
+        margin: auto;
+        background: #f8f7fe;
+
+        .admissionImage {
+            flex: 1;
+        }
+
+        .admissionImage>img {
+            max-width: 100%;
+            width: 500px;
+            height: auto;
+            margin: auto;
+        }
+
+        .admissionContent {
+            flex: 1;
+
+            .admissionDetails {
+                margin-bottom: 20px;
+            }
+
+            .admissionButton {
+                font-size: 1.25rem;
+                padding: 8px 28px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                display: block !important;
+                background-color: #1b75bb;
+
+                &:hover {
+                    padding: 8px 28px;
+                    transition: all 0.3s ease-out;
+                    background-color: #00a14b;
+                    color: #fff;
+                    transition: 258ms;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .admissionWrapper {
+        flex-direction: column;
+        gap: 15px !important;
+    }
+
+    .admissionImage>img {
+        width: 700px !important;
+    }
+
+    .admissionHeading,
+    .missionHeading,
+    .welcomeHeading,
+    .facilitiesHeading,
+    .galleryHeading {
+        font-size: 26px !important;
+    }
+}

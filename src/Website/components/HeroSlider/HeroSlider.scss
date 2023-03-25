@@ -1,0 +1,66 @@
+.heroSlider {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+    margin-bottom: 75px;
+
+    .slick-slider>button {
+        cursor: pointer;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: #0a0a0a;
+        font-size: 50px;
+        line-height: 1;
+        opacity: .75;
+    }
+
+    .slick-prev {
+        position: absolute;
+        margin-left: 100px;
+        z-index: 1;
+    }
+
+    .slick-next {
+        position: absolute;
+        margin-right: 125px;
+    }
+
+    .sliderImage>img {
+        height: 500px;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sliderImage>img {
+        height: 400px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .sliderImage>img {
+        height: 300px !important;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 40px !important;
+    }
+
+    .slick-prev {
+        margin-left: 60px !important;
+    }
+
+    .slick-next {
+        margin-right: 80px !important;
+    }
+}
+
+// #1b75bb blue
+// #00a14b green
+// #0a0a0a black
+// #f16522 orange

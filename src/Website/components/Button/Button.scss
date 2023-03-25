@@ -1,0 +1,17 @@
+.websiteButton {
+    background-color: #1b75bb;
+    font-size: 1rem;
+    padding: 8px 28px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.websiteButton:hover {
+    padding: 8px 28px;
+    transition: all 0.3s ease-out;
+    background-color: #00a14b;
+    color: #fff;
+    transition: 258ms;
+}

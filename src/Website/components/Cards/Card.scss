@@ -1,0 +1,35 @@
+.cardsContent {
+    box-shadow: 0 16.4034px 77.9163px rgba(228, 227, 233, 0.5);
+    max-width: 350px;
+
+    .cardImage {
+        border-radius: 14px 14px 0 0;
+        padding: 15px;
+    }
+
+    .cardImage>img {
+        max-width: 100%;
+        width: 325px;
+        height: 200px;
+        display: block;
+        margin: auto;
+    }
+
+    .cardDetails {
+        background-color: #FFF;
+        padding: 15px;
+        border-radius: 0 0 14px 14px;
+        flex-grow: 1;
+
+        .cardTitle {
+            color: #292d34;
+        }
+
+        .cardDescription {
+            margin: 15px 0 20px;
+            font-size: 14px;
+            line-height: 1.5;
+            color: #292d34;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+.welcomeSection {
+    padding: 0 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+
+    .welcomeWrapper {
+        display: flex;
+        align-items: center;
+        line-height: 2;
+        max-width: 1440px;
+        padding: 25px;
+        margin: auto;
+        border-radius: 30px;
+        background: rgb(159, 171, 169);
+        background: linear-gradient(180deg, rgba(159, 171, 169, 1) 0%, rgba(59, 130, 183, 1) 0%, rgba(27, 117, 187, 0.49343487394957986) 100%);
+
+        .welcomeContent {
+            display: flex;
+            flex-direction: column;
+            flex: 2;
+            padding-left: 50px;
+            padding-right: 50px;
+
+            .welcomeHeading {
+                font-size: 32px;
+                color: #0a0a0a;
+            }
+
+            .welcomeQoute {
+                font-size: 18px;
+                margin-top: 10px;
+                color: #333;
+            }
+        }
+
+        .welcomeImage {
+            flex: 1;
+        }
+
+        .welcomeImage>img {
+            max-width: 100%;
+            width: 350px;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .welcomeWrapper {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .welcomeContent {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}

@@ -1,0 +1,51 @@
+.facilitiesContainer {
+    padding: 0 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+
+    .facilitiesSection {
+        max-width: 1440px;
+        padding: 25px;
+        margin: auto;
+        position: relative;
+
+        .facilitiesHeading {
+            font-size: 32px;
+            text-align: center;
+            color: #0a0a0a;
+        }
+
+        .facilitiesBorderLine {
+            display: flex;
+            justify-content: center;
+        }
+
+        .facilitiesWrapper {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+
+            >.simpleCardContainer:nth-child(1) {
+                border-left: 5px solid #1b75bb;
+            }
+
+            >.simpleCardContainer:nth-child(2) {
+                border-left: 5px solid rgb(0, 161, 75);
+            }
+
+            >.simpleCardContainer:nth-child(3) {
+                border-left: 5px solid #f16522;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .facilitiesWrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 75px !important;
+    }
+}

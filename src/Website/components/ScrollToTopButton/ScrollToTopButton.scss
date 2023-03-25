@@ -1,0 +1,33 @@
+.scrollToTopButtonContainer {
+
+    :hover,
+    :focus {
+        animation: scrollToTop 1s;
+        color: #f16522;
+        box-shadow: 0 0 0 1em #f8f7fe;
+        border-radius: 50%;
+    }
+
+    @keyframes scrollToTop {
+        0% {
+            box-shadow: 0 0 0 0 var(--hover);
+        }
+    }
+
+    .scrollToTopButton {
+        width: 30px;
+        height: 30px;
+        position: fixed;
+        z-index: 100;
+        left: 95%;
+        bottom: 50px;
+        color: darkslategray;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 767px) {
+    .scrollToTopButton {
+        left: 90% !important;
+    }
+}
