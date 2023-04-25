@@ -26,7 +26,7 @@ export const MenuItems = [
     },
     {
         title: 'CMS',
-        url: ["/signin", "/signin"],
+        url: ["/", "/"],
         itemClass: "navLinks"
     },
     {
